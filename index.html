@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayorinde Maryam Oluwatoyin</title>
+
+    <!-- Favicon Logo -->
+    <link rel="shortcut icon" href="media/myLogo.png" type="image/x-icon">
+    <!-- Css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- JavaScript -->
+    <script src="/js/script.js" defer></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- Fontawesome Link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="portfolio">
+        <header class="portfolio__header">
+            <div class="porfolio__logo">
+                <img src="./media/myLogo.png" class="portfolio__logo-img" alt="My Logo">
+            </div>
+
+            <button class="portfolio__nav" aria-label="Navigation icon">
+                <i class="fas fa-bars nav__open"  aria-hidden="true" ></i>
+            </button>
+
+            <nav class="nav">
+            <button class="portfolio__nav portfolio__nav--close" aria-label="Navigation icon">
+                <i class="fas fa-times nav__close" aria-hidden="true"></i>
+            </button>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Resume</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="portfolio__main">
+            <section class="portfolio__home">
+                <div class="home__texts">
+                    <h1 class="home__title">Ayorinde Maryam Oluwatoyin</h1>
+                    <p class="home__desc">I am a front-end web developer who loves creating clean and user-friendly websites. 
+                    I enjoy bringing ideas to life with cool designs and smooth experiences.</p>
+                </div>
+                <div class="home__btn-container">
+                    <button class="home__btn home__btn--colored">View My Work</button>
+                    <button class="home__btn">Let's Connect</button>
+                </div>
+                <div class="home__introduction">
+                    <div class="introduction__image">
+                        <img src="./media/user-img1.jpg" class="home__image" alt="Developer Image">
+                    </div>
+                    
+                    <div class="home__icons">
+                        <div class="home__icon">
+                            <i class="fa-brands fa-html5 html__icon"></i>
+                        </div>
+                        <div class="home__icon">
+                            <i class="fa-brands fa-css3 css__icon"></i>
+                        </div>
+                        <div class="home__icon">
+                            <i class="fa-brands fa-js js__icon"></i>
+                        </div>
+                        <div class="home__icon">
+                            <i class="fa-brands fa-sass sass__icon"></i>
+                        </div>
+                        <div class="home__icon">
+                            <i class="icon__tailwind"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="portfolio__about">
+                <div class="portfolio__about-title">
+                    <span class="about__title">Get to know</span>
+                    <h1 class="about__title--main">About Me</h1>
+                </div>
+
+                <hr class="portfolio__divider"></hr>
+                <div class="">
+                    <div class="about__description">
+                        <div class="about__image--container">
+                            <span class="about__shadow"></span>
+                            <img src="./media/user-img1.jpg" class="about__image" alt="User Image">
+                        </div>
+        
+                        <div class="portfolio__text">
+                            <p class="about__answer">I am a front-end web developer who loves creating clean and user-friendly websites. 
+                                I enjoy bringing ideas to life with cool designs and smooth experiences.</p>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio__tabs">
+                        <button class="tab__btn active" data-target="1" aria-hidden="true">
+                            <i class="fa-solid fa-code" aria-label="Skills button"></i>
+                            <span>Skills</span>
+                        </button>
+    
+                        <button class="tab__btn" data-target="2" aria-hidden="true">
+                            <i class="fa-solid fa-radiation" aria-label="Education icon"></i>                        
+                            <span>Education</span>
+                        </button>
+    
+                        <button class="tab__btn" data-target="3" aria-hidden="true">
+                            <i class="fa-solid fa-star" aria-label="Interest icon"></i>
+                            <span>Interest</span>
+                        </button>
+                    </div>
+    
+                    <div class="tab__contents">
+                        <div class="tab__content skills active" data-content="1">
+                            <p class="skills__title">Frontend Development</p>
+                            <span class="progress__bar"><span class="frontend"></span></span>
+                        </div>
+    
+                        <div class="tab__content education" data-content="2">
+                            <div class="education__tab education__pseudo">
+                                <h2 class="skills__title">Soft Skills & Web Design</h2>
+                                <p class="">GFA Technology (LAG-UP)</p>
+                            </div>
+                            <div class="education__tab education__odd">
+                                <h2 class="skills__title">Web Developement</h2>
+                                <p class="">Center for Integrated Health Program (CIHP)</p>
+                            </div>
+                            <div class="education__tab education__pseudo">
+                                <h2 class="skills__title">Responsive Web Design</h2>
+                                <p class="">freeCodeCamp</p>
+                            </div>
+                            <div class="education__tab education__odd">
+                                <h2 class="skills__title">Web Development</h2>
+                                <p class="">Lagos State Ministry of Wealth and Employment Creation</p>
+                            </div>
+                        </div>
+    
+                        <div class="tab__content interest__grid" data-content="3">
+                            <div class="interest__card">
+                                <div class="interest__icon"><i class="fa-solid fa-paintbrush"></i></div>
+                                <p class="interest__title">Designing with CSS</p>
+                            </div>
+
+                            <div class="interest__card">
+                                <div class="interest__icon"><i class="fa-solid fa-laptop-code"></i></div>
+                                <p class="interest__title">Building Projects</p>
+                            </div>
+
+                            <div class="interest__card">
+                                <div class="interest__icon"><i class="fa-solid fa-video"></i></div>
+                                <p class="interest__title">Content Creation</p>
+                            </div>
+
+                            <div class="interest__card">
+                                <div class="interest__icon"><i class="fa-solid fa-book-open"></i></div>
+                                <p class="interest__title">Learning & Growing</p>
+                            </div>
+
+                                <div class="interest__card">
+                                <div class="interest__icon"><i class="fa-solid fa-globe"></i></div>
+                                <p class="interest__title">Exploring New Ideas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="portfolio__technical--skills">
+                <div class="portfolio__about-title">
+                    <span class="about__title">What I'm Good at</span>
+                    <h1 class="about__title--main">Technical Skills</h1>
+                </div>
+
+                <hr class="portfolio__divider"></hr>
+
+                <div class="skills__tab">
+                    <button class="">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Frontend</span>
+                    </button>
+                </div>
+
+                <div class="skills__contents">
+                    <div class="skill__content active">
+                         <ul class="skills__list">
+                                <li class="skills__item">
+                                    <div class="home__icon skills__icon">
+                                        <i class="fa-brands fa-html5 html__icon"></i>
+                                    </div>
+                                    <div class="skills__description">
+                                        <h3 class="skills__title">Html</h3>
+                                        <p class="skills__text">Building the structure of web pages.</p>
+                                        <span class="progress__bar"><span class="html"></span></span>
+                                    </div>
+                                </li>
+
+                                <li class="skills__item">
+                                     <div class="home__icon skills__icon">
+                                        <i class="fa-brands fa-css3 css__icon"></i>
+                                    </div>
+                                    <div class="skills__description">
+                                        <h3 class="skills__title">Css</h3>
+                                        <p class="skills__text">Styling and designing responsive layouts</p>
+                                        <span class="progress__bar"><span class="css"></span></span>
+                                    </div>
+                                </li>
+
+                                <li class="skills__item">
+                                    <div class="home__icon skills__icon">
+                                        <i class="fa-brands fa-js js__icon"></i>
+                                    </div>
+                                    <div class="skills__description">
+                                        <h3 class="skills__title">JavaScript</h3>
+                                        <p class="skills__text">Adding interactivity and dynamic features</p>
+                                        <span class="progress__bar"><span class="javascript"></span></span>
+                                    </div>
+                                </li>
+
+                                <li class="skills__item">
+                                    <div class="home__icon skills__icon">
+                                        <i class="fa-brands fa-sass sass__icon"></i>
+                                    </div>
+    
+                                    <div class="skills__description">
+                                        <h3 class="skills__title">Sass</h3>
+                                        <p class="skills__text">Writing cleaner and reusable CSS with variables and nesting.</p>
+                                        <span class="progress__bar"><span class="sass"></span></span>
+                                    </div>
+                                </li>
+
+                                <li class="skills__item">
+                                    <div class="home__icon skills__icon">
+                                        <i class="icon__tailwind"></i>
+                                    </div>
+                                    
+                                    <div class="skills__description">
+                                        <h3 class="skills__title">Tailwindcss</h3>
+                                        <p class="skills__text">Quickly creating modern, responsive designs with utility classes.</p>
+                                        <span class="progress__bar"><span class="tailwindcss"></span></span>
+                                    </div>
+                                </li>
+
+                                <li class="skills__item">
+                                    <div class="home__icon skills__icon">
+                                        <i class="fa-brands fa-github"></i>
+                                    </div>
+                                    <div class="skills__description">
+                                        <h3 class="skills__title">Git and Github</h3>
+                                        <p class="skills__text">Sharing and collaborating on projects.</p>
+                                        <span class="progress__bar"><span class="git"></span></span>
+                                    </div>
+                                </li>
+                            </ul> 
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
