@@ -112,7 +112,8 @@ body{
 	color: var(--ivory-white);
 	text-decoration: none;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 600;
+    letter-spacing: 2px;
 	width: 15.625rem;
 	height: 3.125rem;
 	display: grid;
@@ -557,6 +558,7 @@ section{
 }
 
 .skills__title{
+    font-weight: 600;
     font-size: 1.3rem;
     margin-block-end: 0.7rem;
 }
@@ -599,4 +601,5 @@ section{
 
 .skills__btn:hover{
     background-image: linear-gradient(var(--medium-plum), var(--rasberry-red));
+    color: var(--ivory-white);
 }

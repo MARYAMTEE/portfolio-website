@@ -21,6 +21,10 @@ navLink.forEach(link => {
     });
 });
 
+overlay.addEventListener("click", () => {
+    nav.classList.remove("toggle");
+});
+
 const tabs = document.querySelectorAll(".tab__btn");
 const contents = document.querySelectorAll(".tab__content");
 
