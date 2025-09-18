@@ -586,3 +586,17 @@ section{
     width: 4rem;
     height: 3rem;
 }
+
+.skills__btn{
+    outline: none;
+    border: 1px solid var(--medium-plum);
+    background-color: transparent;
+    padding: 1rem 2rem;
+    margin-block-end: 3rem;
+    border-radius: 7px;
+    transition: background-image 0.3s ease;
+}
+
+.skills__btn:hover{
+    background-image: linear-gradient(var(--medium-plum), var(--rasberry-red));
+}
