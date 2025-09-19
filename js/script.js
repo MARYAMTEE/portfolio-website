@@ -40,3 +40,28 @@ tabs.forEach(tab => {
         matchingContent.classList.add("active");
     });
 });
+
+const buttons = document.querySelectorAll(".project__btn");
+const items = document.querySelectorAll(".projects__card");
+
+function showItems(filter){
+    items.forEach(item => {
+        if (filter === "all" || item.getAttribute("data-category") === filter) {
+            item.classList.add("show");
+        } else {
+            item.classList.remove("show");
+        }
+    });
+}
+
+showItems("all");
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        buttons.forEach(b => b.classList.remove("active"));
+
+        button.classList.add("active");
+        const filter = button.dataset.filter;
+        showItems(filter);
+    });
+});

@@ -9,12 +9,15 @@
 	--soft-gray: #E5E5E5;
     --light-medium-plum: #4b2b3f50;
     --very-light: #4b2b3f1c;
+    --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.25);
+    --shadow-deep: 0 12px 30px rgba(0, 0, 0, 0.35);
 
 
     --html: hsl(13, 77%, 52%);
     --css: hsl(205, 79%, 40%);
     --js: hsl(53, 93%, 54%);
     --sass: hsl(330, 50%, 60%);
+    --github: hsl(0, 2%, 9%);
 }
 
 *{
@@ -60,6 +63,7 @@ body{
     position: sticky;
     top: 0;
     padding: 1rem;
+    z-index: 1000;
 }
 
 /* Logo section */
@@ -167,6 +171,7 @@ section{
 }
 
 .home__title{
+    font-family: "Exo 2", sans-serif;
     padding-block-end: 0.5rem;
 }
 
@@ -227,6 +232,10 @@ section{
     color: var(--sass);
 }
 
+.github__icon{
+    color: var(--github);
+}
+
 .home__icons{
     display: flex;
     align-items: center;
@@ -268,7 +277,8 @@ section{
 
 /* About section */
 .portfolio__about,
-.portfolio__technical--skills{
+.portfolio__technical--skills,
+.portfolio__projects{
     padding-block: 3rem;
 }
 
@@ -278,6 +288,7 @@ section{
 
 .about__title{
     text-transform: uppercase;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 2px;
 }
@@ -602,4 +613,76 @@ section{
 .skills__btn:hover{
     background-image: linear-gradient(var(--medium-plum), var(--rasberry-red));
     color: var(--ivory-white);
+}
+
+/* Projects section */
+.projects__grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+    gap: 2rem;
+}
+
+.projects__card{
+    display: none;
+    border-radius: 7px;
+    background-color: var(--ivory-white);
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+    transition: transform 0.3s ease;
+}
+
+.projects__card:hover{
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-deep);
+}
+
+.projects__card.show{
+    display: block;
+}
+
+.projects__image{
+    position: relative;
+    height: 12.5rem;
+    overflow: hidden;
+}
+
+.projects__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.projects__card:hover .projects__image img{
+    transform: scale(1.05);
+}
+
+.projects__links{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* .project-card:hover .project-links {
+    opacity: 1;
+} */
+
+.projects__card:hover .projects__links{
+    opacity: 1;
+}
+
+.projects__info{
+    text-align: left;
+    padding: 1.5rem;
+}
+
+.projects__text{
+    padding-block: 1rem;
 }
