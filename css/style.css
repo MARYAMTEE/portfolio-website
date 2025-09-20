@@ -82,9 +82,9 @@ body{
 
 .nav{
     position: fixed;
-    right: -15rem;
+    right: -16rem;
     top: 5rem;
-    width: 15rem;
+    width: 16rem;
     height: 100%;
     background-color: var(--deep-plum);
     transition: right 0.5s ease-in-out;
@@ -862,11 +862,33 @@ section{
     list-style-type: none;
 }
 
-.footer__item li{
-    margin-block-end: 1rem;
+.footer__list{
+    display: block;
 }
 
-.footer__item a{
+.footer__list span{
+    position: relative;
+    display: inline-block;
+    padding: 1rem 0;
+}
+
+.footer__list span::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-image: linear-gradient(var(--medium-plum), var(--rasberry-red));
+    margin-block-end: 0.3rem;
+    transition: width 0.5s ease;
+}
+
+.footer__list span:hover::after{
+    width: 100%;
+}
+
+.footer__list--link{
     text-decoration: none;
     color: var(--ivory-white);
 }
