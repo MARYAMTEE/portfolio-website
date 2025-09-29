@@ -172,7 +172,16 @@ body{
 
 /* Main page begins here */
 section{
+    opacity: 0;
+    transform: translateY(0.2rem);
+    transition: all 0.8s ease-out;
     padding-inline: 1.5rem;
+    min-height: 100vh;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .portfolio__home{
