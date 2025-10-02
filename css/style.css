@@ -130,8 +130,7 @@ body{
 	text-transform: uppercase;
 	font-weight: 600;
     letter-spacing: 2px;
-	width: 15.625rem;
-	height: 3.125rem;
+	padding: 1rem 4rem;
 	display: grid;
     place-items: center;
 	gap: 2.5rem;
@@ -955,7 +954,7 @@ section.show {
     max-width: 33.75rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
     .portfolio__tabs{
         flex-direction: row;
     }
@@ -965,7 +964,7 @@ section.show {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 56.25em) {
     .skills__item{
         flex: 0 0 auto;
         width: 50%;
@@ -976,9 +975,39 @@ section.show {
         max-width: 46.8rem;
         margin: 0 auto;
     }
+    
+    .nav{
+        position: relative;
+        width: auto;
+        height: auto;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        flex-direction: row;
+        transition: none;
+    }
+
+    .portfolio__nav{
+        display: none;
+    }
+
+    .nav__list{
+        flex-direction: row;
+    }
+
+    .nav__item{
+        background-color: transparent;
+        margin-block-end: 0;
+    }
+
+    .nav__link{
+        padding: 1rem 2rem;
+        font-weight: 400;
+        font-size: 1rem;
+    }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
     .portfolio__home {
         padding-block: 5rem;
     }
