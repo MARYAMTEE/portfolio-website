@@ -19,7 +19,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
     <header class="portfolio__header">
         <div class="porfolio__logo">
             <img src="./media/myLogo.png" class="portfolio__logo-img" alt="My Logo">
@@ -85,86 +84,88 @@
         </section>
 
         <section class="portfolio__about" id="about">
-            <div class="portfolio__about-title">
+            <div class="portfolio__about--title">
                 <span class="about__title">Get to know</span>
                 <h1 class="about__title--main">About Me</h1>
             </div>
+
             <hr class="portfolio__divider"></hr>
+
             <div class="portfolio__about-container">
+                <div class="about__image--container">
+                    <span class="about__shadow"></span>
+                    <img src="./media/user-img1.jpg" class="about__image" alt="User Image">
+                </div>
+                
                 <div class="about__description">
-                    <div class="about__image--container">
-                        <span class="about__shadow"></span>
-                        <img src="./media/user-img1.jpg" class="about__image" alt="User Image">
-                    </div>
-    
                     <div class="portfolio__text">
                         <p class="about__answer">I am a front-end web developer who loves creating clean and user-friendly websites. 
-                            I enjoy bringing ideas to life with cool designs and smooth experiences.</p>
+                            I enjoy bringing ideas to life with cool designs and smooth experiences.
+                        </p>
                     </div>
-                </div>
-
-                <div class="portfolio__tabs">
-                    <button type="button" class="tab__btn active" data-target="1" aria-hidden="true">
-                        <i class="fa-solid fa-code" aria-label="Skills button"></i>
-                        <span>Skills</span>
-                    </button>
-
-                    <button type="button" class="tab__btn" data-target="2" aria-hidden="true">
-                        <i class="fa-solid fa-radiation" aria-label="Education icon"></i>                        
-                        <span>Education</span>
-                    </button>
-
-                    <button type="button" class="tab__btn" data-target="3" aria-hidden="true">
-                        <i class="fa-solid fa-star" aria-label="Interest icon"></i>
-                        <span>Interest</span>
-                    </button>
-                </div>
-
-                <div class="tab__contents">
-                    <div class="tab__content skills active" data-content="1">
-                        <p class="skills__title">Frontend Development</p>
-                        <span class="progress__bar"><span class="frontend"></span></span>
+                    <div class="portfolio__tabs">
+                        <button type="button" class="tab__btn active" data-target="1" aria-hidden="true">
+                            <i class="fa-solid fa-code" aria-label="Skills button"></i>
+                            <span>Skills</span>
+                        </button>
+    
+                        <button type="button" class="tab__btn" data-target="2" aria-hidden="true">
+                            <i class="fa-solid fa-radiation" aria-label="Education icon"></i>                        
+                            <span>Education</span>
+                        </button>
+    
+                        <button type="button" class="tab__btn" data-target="3" aria-hidden="true">
+                            <i class="fa-solid fa-star" aria-label="Interest icon"></i>
+                            <span>Interest</span>
+                        </button>
                     </div>
-
-                    <div class="tab__content education" data-content="2">
-                        <div class="education__tab education__pseudo">
-                            <h2 class="skills__title">Soft Skills & Web Design</h2>
-                            <p class="">GFA Technology (LAG-UP)</p>
+    
+                    <div class="tab__contents">
+                        <div class="tab__content skills active" data-content="1">
+                            <p class="skills__title">Frontend Development</p>
+                            <span class="progress__bar"><span class="frontend"></span></span>
                         </div>
-                        <div class="education__tab education__odd">
-                            <h2 class="skills__title">Web Developement</h2>
-                            <p class="">Center for Integrated Health Program (CIHP)</p>
+    
+                        <div class="tab__content education" data-content="2">
+                            <div class="education__tab education__pseudo">
+                                <h2 class="skills__title">Soft Skills & Web Design</h2>
+                                <p class="">GFA Technology (LAG-UP)</p>
+                            </div>
+                            <div class="education__tab education__odd">
+                                <h2 class="skills__title">Web Developement</h2>
+                                <p class="">Center for Integrated Health Program (CIHP)</p>
+                            </div>
+                            <div class="education__tab education__pseudo">
+                                <h2 class="skills__title">Responsive Web Design</h2>
+                                <p class="">freeCodeCamp</p>
+                            </div>
+                            <div class="education__tab education__odd">
+                                <h2 class="skills__title">Web Development</h2>
+                                <p class="">Lagos State Ministry of Wealth and Employment Creation</p>
+                            </div>
                         </div>
-                        <div class="education__tab education__pseudo">
-                            <h2 class="skills__title">Responsive Web Design</h2>
-                            <p class="">freeCodeCamp</p>
-                        </div>
-                        <div class="education__tab education__odd">
-                            <h2 class="skills__title">Web Development</h2>
-                            <p class="">Lagos State Ministry of Wealth and Employment Creation</p>
-                        </div>
-                    </div>
-
-                    <div class="tab__content interest__grid" data-content="3">
-                        <div class="interest__card">
-                            <div class="interest__icon"><i class="fa-solid fa-paintbrush"></i></div>
-                            <p class="interest__title">Designing with CSS</p>
-                        </div>
-                        <div class="interest__card">
-                            <div class="interest__icon"><i class="fa-solid fa-laptop-code"></i></div>
-                            <p class="interest__title">Building Projects</p>
-                        </div>
-                        <div class="interest__card">
-                            <div class="interest__icon"><i class="fa-solid fa-video"></i></div>
-                            <p class="interest__title">Content Creation</p>
-                        </div>
-                        <div class="interest__card">
-                            <div class="interest__icon"><i class="fa-solid fa-book-open"></i></div>
-                            <p class="interest__title">Learning & Growing</p>
-                        </div>
+    
+                        <div class="tab__content interest__grid" data-content="3">
                             <div class="interest__card">
-                            <div class="interest__icon"><i class="fa-solid fa-globe"></i></div>
-                            <p class="interest__title">Exploring New Ideas</p>
+                                <div class="interest__icon"><i class="fa-solid fa-paintbrush"></i></div>
+                                <p class="interest__title">Designing with CSS</p>
+                            </div>
+                            <div class="interest__card">
+                                <div class="interest__icon"><i class="fa-solid fa-laptop-code"></i></div>
+                                <p class="interest__title">Building Projects</p>
+                            </div>
+                            <div class="interest__card">
+                                <div class="interest__icon"><i class="fa-solid fa-video"></i></div>
+                                <p class="interest__title">Content Creation</p>
+                            </div>
+                            <div class="interest__card">
+                                <div class="interest__icon"><i class="fa-solid fa-book-open"></i></div>
+                                <p class="interest__title">Learning & Growing</p>
+                            </div>
+                                <div class="interest__card">
+                                <div class="interest__icon"><i class="fa-solid fa-globe"></i></div>
+                                <p class="interest__title">Exploring New Ideas</p>
+                            </div>
                         </div>
                     </div>
                 </div>

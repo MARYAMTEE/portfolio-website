@@ -331,6 +331,10 @@ section.show {
     margin-inline: auto;
 }
 
+.portfolio__about-container{
+    display: block;
+}
+
 .about__image--container{
     position: relative;
     display: inline-block;
@@ -374,7 +378,7 @@ section.show {
     gap: 2rem;
     align-items: stretch;
     justify-content: center;
-    max-width: 62.5rem;
+    max-width: 45rem;
     padding-block: 2rem;
     margin-inline: auto;
     margin-block: 1.5rem;
@@ -393,21 +397,37 @@ section.show {
     background-color: transparent;
     outline: none;
     border: none;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     display: flex;
     gap: 0.5rem;
-    border-bottom: 1px solid var(--medium-plum);
     width: 100%;
     letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tab__btn::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--medium-plum);
+    display: block;
 }
 
 .tab__btn.active{
+    width: 50%;
     color: var(--rasberry-red);
     font-weight: 600;
     border: 1px solid var(--light-medium-plum);
-    border-bottom: 1px solid var(--medium-plum);
     border-radius: 7px;
-    width: 50%;
+}
+
+.tab__btn.active::after{
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 
 /* Progress Bar */
@@ -935,14 +955,26 @@ section.show {
     max-width: 33.75rem;
 }
 
+@media (min-width: 768px) {
+    .portfolio__tabs{
+        flex-direction: row;
+    }
+
+    .tab__btn.active{
+        width: 100%;
+    }
+}
+
 @media (min-width: 900px) {
     .skills__item{
         flex: 0 0 auto;
         width: 50%;
     }
 
-    .portfolio__tabs{
-        flex-direction: row;
+    .projects__desc{
+        width: 100%;
+        max-width: 46.8rem;
+        margin: 0 auto;
     }
 }
 
@@ -982,5 +1014,38 @@ section.show {
     .item{
         flex: 0 0 auto;
         width: 50%;
+    }
+
+    /* Tab buttons */
+    .tab__btn{
+        border-bottom: none;
+    }
+
+    .portfolio__tabs{
+        border-bottom: 1px solid var(--medium-plum);
+        width: 100%;
+        max-width: 60rem;
+        margin-inline: auto;
+    }
+
+    .tab__btn::after{
+        display: none;
+    }
+
+    .portfolio__about-container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 65.6rem;
+        margin-inline: auto
+    }
+
+    .about__answer{
+        margin-inline: 0;
+        text-align: left;
+    }
+
+    section {
+        padding-inline: 4rem;
     }
 }
