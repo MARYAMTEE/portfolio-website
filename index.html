@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="overlay"></div>
+    
     <header class="portfolio__header">
         <div class="porfolio__logo">
             <img src="./media/myLogo.png" class="portfolio__logo-img" alt="My Logo">
@@ -42,37 +42,43 @@
         </nav>
     </header>
 
+    <div class="overlay"></div>
+
     <main class="portfolio__main">
         <section class="portfolio__home">
-            <div class="home__texts">
-                <h1 class="home__title">Ayorinde Maryam Oluwatoyin</h1>
-                <p class="home__desc">I am a front-end web developer who loves creating clean and user-friendly websites. 
-                I enjoy bringing ideas to life with cool designs and smooth experiences.</p>
-            </div>
-            <div class="home__btn-container">
-                <button type="button" class="home__btn home__btn--colored">View My Work</button>
-                <button type="button" class="home__btn">Let's Connect</button>
-            </div>
-            <div class="home__introduction">
-                <div class="introduction__image">
-                    <img src="./media/user-img1.jpg" class="home__image" alt="Developer Image">
-                </div>
-                
-                <div class="home__icons">
-                    <div class="home__icon">
-                        <i class="fa-brands fa-html5 html__icon"></i>
+            <div class="container__home">
+                <div class="portfolio__details">
+                    <div class="home__texts item">
+                        <h1 class="home__title">Ayorinde Maryam Oluwatoyin</h1>
+                        <p class="home__desc">I am a front-end web developer who loves creating clean and user-friendly websites. 
+                        I enjoy bringing ideas to life with cool designs and smooth experiences.</p>
+        
+                        <div class="home__btn-container">
+                            <button type="button" class="home__btn home__btn--colored">View My Work</button>
+                            <button type="button" class="home__btn">Let's Connect</button>
+                        </div>
                     </div>
-                    <div class="home__icon">
-                        <i class="fa-brands fa-css3 css__icon"></i>
-                    </div>
-                    <div class="home__icon">
-                        <i class="fa-brands fa-js js__icon"></i>
-                    </div>
-                    <div class="home__icon">
-                        <i class="fa-brands fa-sass sass__icon"></i>
-                    </div>
-                    <div class="home__icon">
-                        <i class="icon__tailwind"></i>
+                    
+                    <div class="home__info item">
+                        <img src="./media/user-img1.jpg" class="home__image" alt="Developer Image">
+    
+                        <div class="home__icons">
+                            <div class="home__icon">
+                                <i class="fa-brands fa-html5 html__icon"></i>
+                            </div>
+                            <div class="home__icon">
+                                <i class="fa-brands fa-css3 css__icon"></i>
+                            </div>
+                            <div class="home__icon">
+                                <i class="fa-brands fa-js js__icon"></i>
+                            </div>
+                            <div class="home__icon">
+                                <i class="fa-brands fa-sass sass__icon"></i>
+                            </div>
+                            <div class="home__icon">
+                                <i class="icon__tailwind"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -178,7 +184,7 @@
                 </button>
             </div>
             <div class="skills__contents">
-                <div class="skill__content active">
+                <div class="skill__content">
                      <ul class="skills__list">
                         <!-- skills item 1 -->
                             <li class="skills__item">

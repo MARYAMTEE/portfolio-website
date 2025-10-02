@@ -8,6 +8,7 @@
 	--vt: #d9d9d912;
 	--soft-gray: #E5E5E5;
     --light-medium-plum: #4b2b3f50;
+    --light--ivory-white: #fef9f53f;
     --very-light: #4b2b3f1c;
     --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.25);
     --shadow-deep: 0 12px 30px rgba(0, 0, 0, 0.35);
@@ -176,7 +177,6 @@ section{
     transform: translateY(0.2rem);
     transition: all 0.8s ease-out;
     padding-inline: 1.5rem;
-    min-height: 100vh;
 }
 
 section.show {
@@ -185,7 +185,8 @@ section.show {
 }
 
 .portfolio__home{
-    color: var(--medium-plum);
+    background-color: var(--medium-plum);
+    color: var(--ivory-white);
     padding-block: 3rem;
 }
 
@@ -203,14 +204,16 @@ section.show {
 
 .home__btn-container{
     display: flex;
+    justify-content: center;
     gap: 1rem;
     padding-block-start: 0.8rem;
-    padding-block-end: 2rem;
+    padding-block-end: 2.5rem;
 }
 
 .home__btn{
     width: 100%;
-    border: 0.0625rem solid var(--medium-plum);
+    max-width: 15rem;
+    border: 0.0625rem solid var(--ivory-white);
     background-color: transparent;
     outline: none;
     padding: 1rem 0;
@@ -228,7 +231,7 @@ section.show {
 .home__image{
     border-radius: 50%;
     width: 15rem;
-    border: 4px solid var(--medium-plum);
+    border: 4px solid var(--ivory-white);
     object-fit: cover;
     object-position: center;
     margin: 0 auto;
@@ -260,22 +263,23 @@ section.show {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    padding-block-start: 1rem;
+    margin-block-start: 2.5rem;
 }
 
 .home__icon{
     font-size: 1.5rem;
-    background-color: var(--light-medium-plum);
     width: 2.5rem;
     height: 2.5rem;
     display: grid;
     place-items: center;
     border-radius: 0.2rem;
     cursor: pointer;
+    background-color: var(--light--ivory-white);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home__icon:hover{
+    background-color: var(--light-medium-plum);
     transform: translateY(-8px) rotate(2deg);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
@@ -288,10 +292,6 @@ section.show {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-}
-
-.home__introduction{
-    line-height: 1.9;
 }
 
 /* About section */
@@ -579,6 +579,10 @@ section.show {
 }
 
 /* Technical Skill */
+.skilss{
+    display: inline-block;
+}
+
 .portfolio__technical--skills{
     background-color: var(--very-light);
 }
@@ -608,11 +612,13 @@ section.show {
     border-radius: 7px;
     background-color: var(--ivory-white);
     padding: 1.5rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 
 .skills__list{
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .skills__icon{
@@ -923,4 +929,58 @@ section.show {
 
 .footer__paragraph{
     letter-spacing: 1px;
+}
+
+.container{
+    max-width: 33.75rem;
+}
+
+@media (min-width: 900px) {
+    .skills__item{
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .portfolio__tabs{
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    .portfolio__home {
+        padding-block: 5rem;
+    }
+
+    .container__home{
+        width: 100%;
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+
+    .portfolio__details{
+        display: flex;
+        align-items: center;
+    }
+
+    .home__texts {
+        text-align: start;
+    }
+
+    .home__desc {
+        margin: 0;
+    }
+
+    .home__btn-container {
+        justify-content: start;
+        padding-block-end: 0;
+    }
+
+    .home__image {
+        width: 18rem;
+    }
+
+    .item{
+        flex: 0 0 auto;
+        width: 50%;
+    }
 }
