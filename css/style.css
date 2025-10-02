@@ -304,7 +304,7 @@ section.show {
 }
 
 .portfolio__about-title{
-    line-height: 1.7;
+    line-height: 1.9;
 }
 
 .about__title{
@@ -316,7 +316,7 @@ section.show {
 
 .about__title--main{
     font-family: "Montserrat", serif;
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.3rem);
     font-weight: 700;
 	color: var(--deep-plum);
 }
@@ -725,7 +725,7 @@ section.show {
 .projects__icon{
     background-color: var(--ivory-white);
     color: var(--medium-plum);
-    padding: 0.7rem;
+    padding: 0.9rem;
     font-size: 1rem;
     border-radius: 50%;
     transition: transform 0.3s ease;
@@ -1045,7 +1045,8 @@ section.show {
         text-align: left;
     }
 
-    section {
+    section:not(.portfolio__about) {
         padding-inline: 4rem;
     }
+
 }
