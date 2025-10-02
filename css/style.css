@@ -954,6 +954,10 @@ section.show {
     max-width: 33.75rem;
 }
 
+.resume__btn{
+    display: none;
+}
+
 @media (min-width: 48em) {
     .portfolio__tabs{
         flex-direction: row;
@@ -1005,6 +1009,11 @@ section.show {
         font-weight: 400;
         font-size: 1rem;
     }
+
+    .portfolio__header{
+        padding-inline: 3rem;
+    }
+
 }
 
 @media (min-width: 64em) {
@@ -1078,4 +1087,14 @@ section.show {
         padding-inline: 4rem;
     }
 
+    .resume__btn{
+        display: flex;
+        place-items: center;
+        gap: 1rem;
+        background-color: var(--rasberry-red);
+        text-decoration: none;
+        color: var(--ivory-white);
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+    }
 }
