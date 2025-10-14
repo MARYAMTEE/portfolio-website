@@ -104,7 +104,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
 }
 
 .nav.toggle{
@@ -215,10 +214,18 @@ section.show {
     border: 0.0625rem solid var(--ivory-white);
     background-color: transparent;
     outline: none;
-    padding: 1rem 0;
+    padding-block: 1rem;
     font-size: 1.1rem;
     border-radius: 0.5rem;
     letter-spacing: 2px;
+    box-shadow: var(--shadow-light);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.home__btn:hover{
+    transform: translateY(-8px) rotate(2deg);
+    background-color: var(--rasberry-red);
+    border: none;
 }
 
 .home__btn--colored{
@@ -396,7 +403,7 @@ section.show {
     background-color: transparent;
     outline: none;
     border: none;
-    padding: 1.5rem 1rem;
+    padding: 1rem;
     display: flex;
     gap: 0.5rem;
     width: 100%;
@@ -1018,7 +1025,8 @@ section.show {
 
 @media (min-width: 64em) {
     .portfolio__home {
-        padding-block: 5rem;
+        padding-block-start: 6rem;
+        height: 100vh;
     }
 
     .container__home{
@@ -1100,5 +1108,9 @@ section.show {
 
     .resume__btn--mobile{
         display: none;
+    }
+
+    .home__btn{
+        padding-block: 1.5rem;
     }
 }
